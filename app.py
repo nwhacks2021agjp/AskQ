@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-from flask_socketio import SocketIO, emit
+from flask_socketio import SocketIO, emit, join_room, leave_room
 
 #cred = credentials.Certificate("path/to/key")
 #firebase_admin.initialize_app(cred)
@@ -21,6 +21,23 @@ def index():
 def admin():
     return render_template("index.html")
 
+@socketio.on('joined')
+def joined(e):
+    """
+    User joined somewhere idk rn
+    """
+    room = "helpMe"
+    join_room(room)
+    socketio.emit('TBD', {'data': "someData"}, room=room)
+
+@socketio.on('text')
+def text(message):
+    """
+    Message from user possibly?
+    """
+    room = "helpMe"
+    socketio.emit('message', {'data': message['msg']}, room=room)
+
 @app.route("/send_message")
 def message():
     response = getMessage() #temp value
@@ -40,4 +57,4 @@ def message():
     return "Response: OK"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port ="8888", debug=True)
