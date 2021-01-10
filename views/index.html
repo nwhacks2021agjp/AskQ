@@ -5,6 +5,8 @@
         AskQ
     </title>
     <style>
+
+
        .text {
         margin: 5;
         }
@@ -25,13 +27,66 @@
         left: 50%;
         transform: translate(-50%, -50%);
         }
+
+        button {
+        border: none;
+        background-color: transparent;
+        color: #EAAC8B;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #B56576;
+        border-radius: 6px;
+        font-size: 16px;
+        }
+
+        h1 {
+        font-size: 100px;
+        font-family: Verdana, Sans-serif;
+        }
+
+        input {
+        border: 5px;
+        padding: 10px;
+        border-radius: 6px;
+        text-align: center;
+        box-sizing: border-box;
+        width: 300px;
+        border: 3px solid #555;
+        background-color: transparent;
+        border: solid 2px #B56576;
+        color: #EAAC8B;
+        placeholder-color: #EAAC8B;
+        }
+
+        ::placeholder {
+        color: #EAAC8B;
+        }
+
+        .widthdivider{
+        width: 1px;
+        height:auto;
+        display:inline-block;
+        }
+
+<!--        input:focus {-->
+<!--        text-align: center;-->
+<!--        border: 3px solid #555;-->
+<!--        background-color: #B56576;-->
+<!--        color: #EAAC8B;-->
+<!--        }-->
+        body {
+        background: rgb(53,80,112);
+        background: linear-gradient(45deg, rgba(53,80,112,1) 0%, rgba(109,89,122,1) 100%);
+        }
     </style>
 </head>
-<body style="background-color:#adcce9">
+<body class="body">
 <div class="absolute">
     <div class="divbox">
         <div class="content">
-            <h1 align="center">AskQ</h1>
+            <h1 align="center" style="color:#EAAC8B">AskQ</h1>
             <div align="center" class="text">
                 <input autocomplete="off" placeholder="Room Code">
             </div>

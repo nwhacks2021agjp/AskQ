@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8282c913-45b4-4e02-8e94-4aa8a49bf486" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="JAujla_BarebonesServer" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mrG7rTZHnXUPNuj1rO6SBwyJwy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\alex\PycharmProjects\AskQ\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\alex\PycharmProjects\AskQ\views" />
+      <recent name="D:\Users\alex\PycharmProjects\AskQ\static" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8282c913-45b4-4e02-8e94-4aa8a49bf486" name="Default Changelist" comment="" />
+      <created>1610244131622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610244131622</updated>
+    </task>
+    <task id="LOCAL-00001" summary="&quot;added layout.html and bootstrap&quot;">
+      <created>1610245109124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610245109124</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;changed templates to views and added new app.js code&quot;">
+      <created>1610245745400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610245745400</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;commited bootstrap&quot;">
+      <created>1610246579761</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610246579761</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;added content to index.html&quot;">
+      <created>1610252468596</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610252468596</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;Created index page with buttons and text&quot;">
+      <created>1610257461922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610257461922</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;Merged with workingbackend&quot;">
+      <created>1610259339754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610259339754</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;deleted .idea and jinja-js&quot;">
+      <created>1610259679505</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610259679505</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;really deleted jinja-js this time&quot;">
+      <created>1610259934545</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610259934545</updated>
+    </task>
+    <task id="LOCAL-00009" summary="&quot;deleted static and it's contents&quot;">
+      <created>1610259970932</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610259970932</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;added layout.html and bootstrap&quot;" />
+    <MESSAGE value="&quot;changed templates to views and added new app.js code&quot;" />
+    <MESSAGE value="&quot;commited bootstrap&quot;" />
+    <MESSAGE value="&quot;added content to index.html&quot;" />
+    <MESSAGE value="&quot;Created index page with buttons and text&quot;" />
+    <MESSAGE value="&quot;Merged with workingbackend&quot;" />
+    <MESSAGE value="&quot;deleted .idea and jinja-js&quot;" />
+    <MESSAGE value="&quot;really deleted jinja-js this time&quot;" />
+    <MESSAGE value="&quot;deleted static and it's contents&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;deleted static and it's contents&quot;" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1195" y="343" key="#Notifications" timestamp="1610259125209">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1195" y="343" key="#Notifications/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610259125209" />
+    <state x="-1199" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610247840818">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1199" y="321" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610247840818" />
+    <state x="-1736" y="86" key="MergeDialog" timestamp="1610259063849">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1736" y="86" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610259063849" />
+    <state x="-1322" y="281" key="MultipleFileMergeDialog" timestamp="1610259063857">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1322" y="281" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610259063857" />
+    <state x="-1380" y="195" key="Vcs.Push.Dialog.v2" timestamp="1610259971884">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1380" y="195" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610259971884" />
+    <state x="584" y="206" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610257904338" />
+    <state x="-663" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610267112570">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-663" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610267112570" />
+    <state x="-1184" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1610258948000">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1184" y="232" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610258948000" />
+  </component>
+</project>
