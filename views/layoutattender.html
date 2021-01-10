@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Socket.IO chat</title>
     <style>
-        body {
-          margin: 0 auto;
-          max-width: 800px;
-          padding: 0 20px;
+        .text {
+            margin: 5;
         }
-        
+
         .chatbox {
-          border: 2px solid #dedede;
-          background-color: #f1f1f1;
-          border-radius: 5px;
-          padding: 10px;
-          margin: 10px 0;
+            
+            border: 2px solid #dedede;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .divbox {
+        
+            width: 300px;
+            display: inline-block;
+            width: 300px;
+            padding: 50px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
-  </head>
-  <body>
-    <h1>MESSAGES</h1>
+</head>
 
-    <div style="height:600px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;" id="chatbox">
-        
+<body>
+    
+
+    <div class="absolute">
+        <div class="divbox">
+            <div class = "divbox"><h1 align="center">Messages</h1></div>
+            <div class="chatbox"
+                style="height:600px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"
+                id="chatbox">
+                
+            </div>
+            <div class = "divbox">
+                <form id="form" action="" align="center">
+                    <input id="input" autocomplete="off" /><button id="send_message">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <ul id="messages"></ul>
 
-    <form id="form" action="">
-      <input id="input" autocomplete="off" /><button id="send_message">Send</button>
-    </form>
+    
 
     <template>
         <div class="template">
             <p>Question:</p>
         </div>
     </template>
-    
+
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
@@ -61,8 +87,9 @@
             //var node = document.createTextNode(data); 
             div.appendChild(para);
             //document.body.append(para);
-    
+
         })
     </script>
-  </body>
+</body>
+
 </html>
