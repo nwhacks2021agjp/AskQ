@@ -24,6 +24,10 @@ io.on('connection', (socket) => {
 
     socket.join('roomCode')
 
+    db.collection('messages').get().then( (e) => {
+        socket.emit("rejoin", e.docs.map(doc => doc.data()));
+    });
+
     // socket.on('setRoomCode', (data) => {
     //     const destination = "/attend";
     //     console.log('User Entered Room Code:' + data);
@@ -34,7 +38,7 @@ io.on('connection', (socket) => {
     socket.on('chat message', (data) => {
         console.log('user message:' + data);
         // var data = JSON.parse(data)
-        // db.collection('messages')
+        db.collection('messages').doc(data.divID.toString()).set(data)
         io.to('roomCode').emit('store message', data);
     })
 
