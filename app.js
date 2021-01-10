@@ -11,7 +11,9 @@ io.on('connection', (socket) => {
 
     socket.on('chat message', (data) => {
         console.log('user message:' + data);
+        socket.emit('store message', data);
     })
+
 })
 
 http.listen(5000, function() {
