@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+        body {
+          margin: 0 auto;
+          max-width: 800px;
+          padding: 0 20px;
+        }
+        
+        .chatbox {
+          border: 2px solid #dedede;
+          background-color: #f1f1f1;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>MESSAGES</h1>
+
+    <div style="height:600px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;" id="chatbox">
+        
+    </div>
+
+    <ul id="messages"></ul>
+
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button id="send_message">Send</button>
+    </form>
+
+    <template>
+        <div class="template">
+            <p>Question:</p>
+        </div>
+    </template>
+    
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+
+        var form = document.getElementById('form');
+        var input = document.getElementById('input');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (input.value) {
+                socket.emit('chat message', input.value);
+                input.value = '';
+            }
+        });
+
+        socket.on("store message", (data) => {
+            console.log(data + "came back to user"); // <- edit this later
+            var div = document.getElementById("chatbox");
+            var para = document.createElement("p");
+            para.innerHTML = data;
+            //var node = document.createTextNode(data); 
+            div.appendChild(para);
+            //document.body.append(para);
+    
+        })
+    </script>
+  </body>
+</html>
