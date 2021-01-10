@@ -8,10 +8,11 @@ app.get('/', function (req, res) {
 
 io.on('connection', (socket) => {
     console.log('a user connected');
+    socket.join('roomCode') //replace later with socket on method?
 
     socket.on('chat message', (data) => {
         console.log('user message:' + data);
-        socket.emit('store message', data);
+        io.to('roomCode').emit('store message', data);
     })
 
 })
