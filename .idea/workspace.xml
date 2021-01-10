@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8282c913-45b4-4e02-8e94-4aa8a49bf486" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layoutattender.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/layoutattender.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610259970932</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;changed index&quot;">
+      <created>1610270276617</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610270276617</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +167,8 @@
     <MESSAGE value="&quot;deleted .idea and jinja-js&quot;" />
     <MESSAGE value="&quot;really deleted jinja-js this time&quot;" />
     <MESSAGE value="&quot;deleted static and it's contents&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;deleted static and it's contents&quot;" />
+    <MESSAGE value="&quot;changed index&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;changed index&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1195" y="343" key="#Notifications" timestamp="1610259125209">
@@ -178,15 +187,15 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1322" y="281" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610259063857" />
-    <state x="-1380" y="195" key="Vcs.Push.Dialog.v2" timestamp="1610259971884">
+    <state x="-1380" y="195" key="Vcs.Push.Dialog.v2" timestamp="1610270278750">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1380" y="195" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610259971884" />
+    <state x="-1380" y="195" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610270278750" />
     <state x="584" y="206" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1610257904338" />
-    <state x="-663" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610267112570">
+    <state x="-663" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610273960503">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-663" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610267112570" />
+    <state x="-663" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1610273960503" />
     <state x="-1184" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1610258948000">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
