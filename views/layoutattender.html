@@ -40,6 +40,14 @@
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
+        var messageData = {
+            divID: String,
+            message: String,
+            timestamp: Date,
+            likes: Number,
+            // tag: MessageTags,
+        }
+
         var socket = io();
 
         var form = document.getElementById('form');
@@ -48,21 +56,37 @@
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             if (input.value) {
-                socket.emit('chat message', input.value);
+                messageData.timestamp = Date.now();
+                messageData.divID = input.value.concat(messageData.timestamp).hashCode();
+                messageData.message = input.value;
+                messageData.likes = 0;
+                socket.emit('chat message', messageData);
                 input.value = '';
             }
         });
 
-        socket.on("store message", (data) => {
-            console.log(data + "came back to user"); // <- edit this later
+        socket.on('store message', (data) => {
+            console.log(data); // <- edit this later
             var div = document.getElementById("chatbox");
             var para = document.createElement("p");
-            para.innerHTML = data;
+            para.innerHTML = data.message;
             //var node = document.createTextNode(data); 
             div.appendChild(para);
             //document.body.append(para);
     
         })
+
+        String.prototype.hashCode = function(){
+          var hash = 0;
+          if (this.length == 0) return hash;
+          for (i = 0; i < this.length; i++) {
+            char = this.charCodeAt(i);
+            hash = ((hash<<5)-hash)+char;
+            hash = hash & hash;
+          }
+          return hash;
+        }
+
     </script>
   </body>
 </html>
