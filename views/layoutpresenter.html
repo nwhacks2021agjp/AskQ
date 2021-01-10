@@ -177,6 +177,12 @@
             createBox(data);
 
         })
+
+        socket.on("rejoin", (dataArray) => {
+          dataArray.forEach( (e) => {
+            createBox(e);
+          });
+        });
     </script>
 </body>
 
