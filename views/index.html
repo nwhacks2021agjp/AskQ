@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Socket.IO chat</title>
-  </head>
-  <body>
-    <ul id="messages"></ul>
-    <form id="form" action="">
-      <input id="input" autocomplete="off" /><button id="send_message">Send</button>
-    </form>
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
+<html lang="en">
+<head>
+    <title>
+        AskQ
+    </title>
+    <style>
+       .text {
+        margin: 5;
+        }
 
-        var form = document.getElementById('form');
-        var input = document.getElementById('input');
+        .content {
+        }
 
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (input.value) {
-                socket.emit('chat message', input.value);
-                input.value = '';
-            }
-        });
+        .divbox {
+        width: 300px;
+        display: inline-block;
+        width: 300px;
+        padding: 50px;
+        }
 
-        socket.on("store message", (data) => {
-          console.log(data + "came back to user");
-        })
-    </script>
-  </body>
+        .absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body style="background-color:#adcce9">
+<div class="absolute">
+    <div class="divbox">
+        <div class="content">
+            <h1 align="center">AskQ</h1>
+            <div align="center" class="text">
+                <input autocomplete="off" placeholder="Room Code">
+            </div>
+            <div align="center" class="button">
+                <button type="button">Join</button>
+                <button type="button">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
