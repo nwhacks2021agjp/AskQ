@@ -1,42 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Socket.IO chat</title>
     <style>
-        body {
-          margin: 0 auto;
-          max-width: 800px;
-          padding: 0 20px;
+        .text {
+            margin: 5;
         }
-        
+
+        .scrollbox {
+
+            border: 2px solid #e56b6f;
+            /* background: rgb(53, 80, 112);
+            background: linear-gradient(45deg, rgba(53, 80, 112, 1) 0%, rgba(109, 89, 122, 1) 100%); */
+            border-radius: 30px;
+            padding: 10px;
+            margin: 0px 0;
+        }
+
         .chatbox {
-          border: 2px solid #dedede;
-          background-color: #f1f1f1;
-          border-radius: 5px;
-          padding: 10px;
-          margin: 10px 0;
+            border: 2px solid #e56b6f;
+            background-color: #6d597a;
+            border-radius: 30px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .divbox {
+
+            width: 1200px;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            color: #eaac8b;
+        }
+
+        button {
+            border: none;
+            background-color: transparent;
+            color: #EAAC8B;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid #B56576;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-family: Verdana, Sans-serif;
+            color: #eaac8b;
+        }
+
+        input {
+            border: 5px;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            box-sizing: border-box;
+            width: 300px;
+            border: 3px solid #555;
+            background-color: transparent;
+            border: solid 2px #B56576;
+            color: #EAAC8B;
+            placeholder-color: #EAAC8B;
+        }
+
+        ::placeholder {
+            color: #EAAC8B;
+        }
+
+        .widthdivider {
+            width: 1px;
+            height: auto;
+            display: inline-block;
+        }
+
+        body {
+            background: rgb(53, 80, 112);
+            background: linear-gradient(45deg, rgba(53, 80, 112, 1) 0%, rgba(109, 89, 122, 1) 100%);
         }
     </style>
-  </head>
-  <body>
-    <h1>MESSAGES</h1>
+</head>
 
-    <div style="height:600px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;" id="chatbox">
-        
+<body>
+    <template>
+        <div class="chatbox" id="chatbox">
+        </div>
+    </template>
+
+
+    <div class="absolute">
+        <div class="divbox">
+            <div class="divbox">
+                <h1 align="center">Questions</h1>
+            </div>
+            <div class="scrollbox"
+                style="height:700px;width:1200px;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"
+                id="scrollbox">
+            </div>
+            <div class="divbox">
+                <form id="form" action="" align="center">
+                    <input id="input" autocomplete="off" /><button id="send_message">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <ul id="messages"></ul>
 
-    <form id="form" action="">
-      <input id="input" autocomplete="off" /><button id="send_message">Send</button>
-    </form>
-
-    <template>
-        <div class="template">
-            <p>Question:</p>
-        </div>
-    </template>
-    
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
@@ -53,16 +141,38 @@
             }
         });
 
+        function createBox(data) {
+            const div = document.createElement("div");
+            const p = document.createElement("p");
+            const tag = "chatbox";
+            const scrollbox = document.getElementById("scrollbox");
+
+            div.setAttribute("class", tag);
+            p.innerHTML = data;
+            div.appendChild(p);
+            scrollbox.appendChild(div);
+
+        }
+
         socket.on("store message", (data) => {
             console.log(data + "came back to user"); // <- edit this later
-            var div = document.getElementById("chatbox");
-            var para = document.createElement("p");
-            para.innerHTML = data;
-            //var node = document.createTextNode(data); 
-            div.appendChild(para);
-            //document.body.append(para);
-    
+            // var div = document.getElementById("scrollbox");
+            // var temp = document.getElementsByTagName("template")[0];
+            // var para = document.createElement("p");
+            // para.innerHTML = data;
+
+            // var box = temp.content.cloneNode(true);
+            // box.appendChild(para);
+
+
+            // //var node = document.createTextNode(data); 
+            // //box.appendChild(para);
+            // div.appendChild(box);
+            // //document.body.append(para);
+            createBox(data);
+
         })
     </script>
-  </body>
+</body>
+
 </html>

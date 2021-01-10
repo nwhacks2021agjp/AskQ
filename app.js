@@ -6,6 +6,11 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
 });
 
+app.get('/attend', function (req, res) {
+    res.sendFile(__dirname + '/views/layoutattender.html');
+});
+
+
 io.on('connection', (socket) => {
     console.log('a user connected');
     socket.join('roomCode') //replace later with socket on method?
