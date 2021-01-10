@@ -91,12 +91,20 @@
           <input autocomplete="off" placeholder="Room Code">
         </div>
         <div align="center" class="button">
-          <button type="button">Join</button>
-          <button type="button">Create</button>
+          <button onclick="attendView()" type="button">Join</button>
+          <button onclick="hostView()" type="button">Create</button>
         </div>
       </div>
     </div>
   </div>
+  <script>
+    function attendView() {
+      window.location.replace('/attend');
+    }
+    function hostView() {
+      window.location.replace('/attend');    
+    }
+  </script>
 </body>
 
 </html>
