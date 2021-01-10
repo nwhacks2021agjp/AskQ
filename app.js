@@ -18,6 +18,9 @@ app.get('/attend', function (req, res) {
     res.sendFile(__dirname + '/views/layoutattender.html');
 });
 
+app.get('/host', function (req, res) {
+    res.sendFile(__dirname + '/views/layoutpresenter.html');
+});
 
 io.on('connection', (socket) => {
     console.log('a user connected');
