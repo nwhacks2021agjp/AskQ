@@ -2,10 +2,24 @@
 <html>
 
 <head>
-    <title>Socket.IO chat</title>
+    <title>Chat</title>
     <style>
         .text {
             margin: 5;
+        }
+        ::-webkit-scrollbar {
+        width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        height: 2px;
         }
 
         .scrollbox {
@@ -13,15 +27,17 @@
             border: 2px solid #e56b6f;
             /* background: rgb(53, 80, 112);
             background: linear-gradient(45deg, rgba(53, 80, 112, 1) 0%, rgba(109, 89, 122, 1) 100%); */
-            border-radius: 30px;
+            border-radius: 10px;
             padding: 10px;
             margin: 0px 0;
+
+
         }
 
         .chatbox {
             border: 2px solid #e56b6f;
             background-color: #6d597a;
-            border-radius: 30px;
+            border-radius: 10px;
             padding: 10px;
             margin: 10px 0;
         }
@@ -41,6 +57,7 @@
         }
 
         p {
+            word-break: break-all;
             display: block;
             margin-top: 1em;
             margin-bottom: 1em;
@@ -146,6 +163,7 @@
             const p = document.createElement("p");
             const tag = "chatbox";
             const scrollbox = document.getElementById("scrollbox");
+
 
             div.setAttribute("class", tag);
             p.innerHTML = data;
